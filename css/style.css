@@ -370,7 +370,7 @@ table {
 	right:0.5em;
 	bottom:0.5em;
 	left:0.5em;
-	background: linear-gradient(#fadb2f 20%,rgba(0, 0, 0, 0) 20%,rgba(0, 0, 0, 0) 40%,#fadb2f 40%,#E04343 60%,rgba(0, 0, 0, 0) 60%,rgba(0, 0, 0, 0) 80%,#E04343 80%);
+	background: linear-gradient(#2c9c73 20%,rgba(0, 0, 0, 0) 20%,rgba(0, 0, 0, 0) 40%,#ba53d9 40%,#ba53d9  60%,rgba(0, 0, 0, 0) 60%,rgba(0, 0, 0, 0) 80%,#fadb2f 80%);
 	content:'';
 }
 .menu-button:hover {
@@ -379,7 +379,7 @@ table {
 /* Menu */
 .menu-wrap {
 	z-index:999;
-	background: #2c9c73;
+	background: #fadb2f;
 	-webkit-transition:width 0.4s,height 0.4s,-webkit-transform 0.4s;
 	transition:width 0.4s,height 0.4s,transform 0.4s;
 	-webkit-transition-timing-function:cubic-bezier(0.7,0,0.3,1);
