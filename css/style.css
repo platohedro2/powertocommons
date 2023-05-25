@@ -98,11 +98,11 @@ html,html a {
 	text-shadow:1px 1px 1px rgba(0,0,0,0.004);
 }
 html,button,input,select,textarea {
-	font-family:'Varela Round',sans-serif;
+	font-family:'courier new';
 }
 body {
 	margin:0;
-	font-family: 'Open Sans',sans-serif;
+	font-family: 'courier new',sans-serif;
 }
 /* ==========================================================================Links========================================================================== */
 a:focus {
@@ -159,7 +159,7 @@ p,pre {
 	margin:1em 0;
 }
 code,kbd,pre,samp {
-	font-family:monospace,serif;
+	font-family:'courier new',serif;
 	_font-family:'courier new',monospace;
 	font-size:1em;
 }
