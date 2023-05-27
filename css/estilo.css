@@ -4,6 +4,12 @@
         font-family: 'Courier New', Courier, monospace;
         background-color: #2c9c73;
     }
+
+    .baretico{
+        margin: 0;
+        padding-top: 60px;
+
+    }
     
     .navbar {
         position: fixed;
@@ -49,9 +55,9 @@
     /* Estilos para el contenido */
     
     .container {
-        margin: 0 auto;
-        max-width: 700px;
-        padding: 20px;
+        margin: 0 auto -200px ;
+        max-width: 900px;
+        padding-left: 200px;
         box-sizing: border-box;
     }
     
@@ -80,7 +86,7 @@
     @media screen and (max-width: 970px) {
         .container{
             width: 60%;
-            text-align: center;
+            
 
 
         }

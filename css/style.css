@@ -968,6 +968,16 @@ ul.social-buttons li:last-child {
 .social {
 	margin-top: 25px
 }
+.bareto{
+	
+		width: 100%; /*se establece el ancho en 100% para que la imagen ocupe todo el ancho de su contenedor*/
+		height: auto; /*se establece la altura en auto para que la imagen se ajuste proporcionalmente al ancho*/
+		display: block; /*se agrega esta propiedad para evitar que la imagen tenga un margin inferior por defecto*/
+		max-width: 100%; /*se agrega esta propiedad para asegurarse de que el ancho máximo de la imagen sea del 100%*/
+	  
+}
+
+
 /* ==========================================================================Contact========================================================================== */
 .up-btn {
 	width:55px;
