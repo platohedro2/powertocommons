@@ -82,6 +82,9 @@
     }
     
 
+    .roca{
+        width: 450px;
+    }
 
     @media screen and (max-width: 970px) {
         .container{
@@ -90,7 +93,9 @@
 
 
         }
-   
+   .roca{
+    width: 60%;
+   }
    
     }
     /* Estilos para pantallas de 700px o menos */
@@ -121,6 +126,9 @@
     
         .nav-link {
         padding: 10px;
+        }
+        .roca{
+            width: 60%;
         }
     }
     
