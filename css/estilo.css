@@ -95,7 +95,10 @@
         }
    .roca{
     width: 60%;
+    margin: 0;
    }
+
+
    
     }
     /* Estilos para pantallas de 700px o menos */
@@ -130,6 +133,13 @@
         .roca{
             width: 60%;
         }
+        .comofue{
+            margin: 0;
+            width: 80%;
+        }
+        .baretico{
+            margin: 0;
+        }
     }
     
     /* Estilos para pantallas de 400px o menos */
@@ -151,22 +161,22 @@
         .container{
             width: 80%;
             max-width: 200px;
+            margin: 0;
 
 
+        }
+        .baretico{
+            margin: 0;
+        }
+        .roca{
+            width: 80%;
+        }
+        .comofue{
+            margin: 0;
+            width: 60%;
         }
     }
 
  
       
-      @media screen and (max-width: 768px) {
-        .container {
-          padding: 10px; /*se reduce el padding para pantallas pequeñas*/
-        }
-      }
-      
-      @media screen and (max-width: 576px) {
-        .container {
-          max-width: 540px; /*se ajusta el ancho máximo para pantallas más pequeñas*/
-          padding: 0 10px; /*se reduce el padding para pantallas muy pequeñas*/
-        }
-      }
+    
