@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Objetos Sensibles</title>
+    <style>
+      .object {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 20px;
+        display: inline-block;
+        transition: background-color 0.3s;
+      }
+
+      .object:hover {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="object" onmouseover="playSound('sound1.mp3')" onmouseout="stopSound('sound1.mp3')"></div>
+    <div class="object" onmouseover="playSound('sound2.mp3')" onmouseout="stopSound('sound2.mp3')"></div>
+    <div class="object" onmouseover="playSound('sound3.mp3')" onmouseout="stopSound('sound3.mp3')"></div>
+
+    <script>
+      function playSound(soundFile) {
+        var audio = new Audio(soundFile);
+        audio.play();
+      }
+
+      function stopSound(soundFile) {
+        var audio = new Audio(soundFile);
+        audio.pause();
+        audio.currentTime = 0;
+      }
+    </script>
+  </body>
+</html>
