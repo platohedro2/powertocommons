@@ -73,3 +73,14 @@ volumeSlider.setAttribute('step', '0.1');
 volumeSlider.setAttribute('value', '1');
 
 volumeSliderContainer.appendChild(volumeSlider);
+
+
+
+// slider  logos 
+const slider = document.querySelector('.slider');
+
+// Obtener el ancho total del slider
+const sliderWidth = slider.scrollWidth;
+
+// Establecer el ancho del slider para que se desplace continuamente
+slider.style.width = `${sliderWidth}px`;
