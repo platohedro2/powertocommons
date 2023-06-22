@@ -64,3 +64,12 @@ function updateProgressBar(e) {
   const progressPercent = (clickX / progressWidth) * 100;
   audio.currentTime = (audio.duration / 100) * progressPercent;
 }
+
+const volumeSliderContainer = document.getElementById('volume-slider-container');
+volumeSlider.setAttribute('type', 'range');
+volumeSlider.setAttribute('min', '0');
+volumeSlider.setAttribute('max', '1');
+volumeSlider.setAttribute('step', '0.1');
+volumeSlider.setAttribute('value', '1');
+
+volumeSliderContainer.appendChild(volumeSlider);

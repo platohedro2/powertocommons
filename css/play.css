@@ -45,6 +45,7 @@
 
   input[type="range"] {
     width: 100px;
+    background-color: #fadb2f;
   }
 
   .progress-bar {
