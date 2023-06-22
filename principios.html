@@ -1,153 +1,204 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Mi Documentación</title>
-  <link rel="stylesheet" href="css/estilo.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-</head>
-<body>
-  <div class="navbar">
-    <a href="index.html" class="navbar-brand"><img class="comofue" src="img/logo_1.png" width="200"></a>
-    <ul class="navbar-nav">
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Principios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <style>
+      .square-image {
+        padding-top: 100%; /* Relativo a la anchura */
+        position: relative;
+        overflow: hidden;
+      }
 
-      <li class="nav-item">
-        <a href="#seccion1" class="nav-link">SUMA MANQAÑA</a>
-      </li>
-      <li class="nav-item">
-        <a href="#seccion2" class="nav-link">SUMA UMAÑA</a>
-      </li>
-      <li class="nav-item">
-        <a href="#seccion3" class="nav-link">SUMA THOKOÑA</a>
-      </li>
+      .square-image img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <div class="flex flex-col md:flex-row">
+      <!-- Columna de la derecha -->
+      <div class="bg-green-600 text-white w-full md:w-64 py-4 md:py-6 px-4 md:px-6">
       
-      <li class="nav-item">
-        <a href="#seccion4" class="nav-link">SUMA IKIÑA</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="#seccion5" class="nav-link">SUMA IRNAKAÑA</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="#seccion6" class="nav-link">SUMA LUPIÑA</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="#seccion7" class="nav-link">SUMA AMUYAÑA</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="#seccion8" class="nav-link">SUMA MUNAÑA, MUNAYASIÑA</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="#seccion9" class="nav-link">SUMA IST AÑA</a>
-      </li>
-
-
-      <li class="nav-item">
-        <a href="#seccion10" class="nav-link">SUMA ARUSKIPAÑA</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="#seccion11" class="nav-link">SUMA SAMKASIÑA</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="#seccion12" class="nav-link">SUMA SARNAQAÑA</a>
-      </li>
-      <li class="nav-item">
-        <a href="#seccion13" class="nav-link">SUMA CHURAÑA, SUMA KATUKAÑA</a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="container">
-    <a href="#" class="back-to-top">Volver arriba</a>
-
-    <div class="baretico">
-    <h1 id="seccion1">SUMA MANQAÑA | #SABERCOMER |CONSCIOUS EATING</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni dolores quam nam aperiam maxime enim pariatur necessitatibus? Porro facere odio debitis voluptatum quos placeat similique maiores rerum obcaecati. Praesentium, mollitia.</p>
-<img class="roca" src="img/COMER.jpg">
-</div>
-
-<div class="baretico">
-    <h1 id="seccion2">SUMA UMAÑA | #SABERBEBER |CONSCIOUS DRINKING</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus cum quae necessitatibus ut iste corporis a enim ipsa perspiciatis exercitationem minima ratione amet qui neque, modi deserunt eos magni vitae!</p>
-    <img class="roca" src="img/BEBER.jpg"></div>
-
-    <div class="baretico">
-    <h1 id="seccion3">SUMA THOKOÑA | #SABERDANZAR |CONSCIOUS DANCING</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates error voluptate perferendis voluptatibus sint fugit ad ratione repellat, sit accusamus quibusdam impedit commodi perspiciatis eligendi, eos nostrum pariatur deserunt nobis.</p>
-    <img class="roca" class="roca" src="img/BAILAR.jpg"></div>
-
-    <div class="baretico">
-    <h1 id="seccion4">SUMA IKIÑA | #SABERDORMIR |CONSCIOUS SLEEPING</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos fugit at, provident perspiciatis, aliquam doloribus autem laudantium doloremque consequatur cum perferendis dolorum quos vero, magnam saepe dolor placeat ipsa incidunt?</p>
-    <img class="roca" src="img/DORMIR.jpg">
+        <a href="index.html"><img src="img/logo_1.png" width="200"></a>
+        <div class="md:hidden">
+          <!-- Menú desplegable para la versión responsive -->
+          <button type="button" class="block text-gray-300 hover:text-white focus:text-white focus:outline-none">
+            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M4 6h16M4 12h16M4 18h16"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="hidden md:block">
+        <ul class="mt-4">
+          <li><a href="#" class="block py-2 hover:text-yellow-300">SUMA MANQAÑA</a></li>
+          <li><a href="#" class="block py-2 hover:text-yellow-300">SUMA UMAÑA</a></li>
+          <li><a href="#" class="block py-2 hover:text-yellow-300">SUMA THOKOÑA</a></li>
+          <li><a href="#" class="block py-2 hover:text-yellow-300">SUMA THOKOÑA</a></li>
+          <li><a href="#" class="block py-2 hover:text-yellow-300">SUMA IKIÑA</a></li>
+          <li><a href="#" class="block py-2 hover:text-yellow-300">SUMA IRNAKAÑA</a></li>
+          <li><a href="#" class="block py-2 hover:text-yellow-300">SUMA LUPIÑA</a></li>
+          <li><a href="#" class="block py-2 hover:text-yellow-300">SUMA AMUYAÑA</a></li>
+          <li><a href="#" class="block py-2 hover:text-yellow-300">SUMA MUNAÑA, MUNAYASIÑA</a></li>
+          <li><a href="#" class="block py-2 hover:text-yellow-300">SUMA IST AÑA</a></li>
+          <li><a href="#" class="block py-2 hover:text-yellow-300">SUMA SAMKASIÑA</a></li>
+          <li><a href="#" class="block py-2 hover:text-yellow-300">SUMA SARNAQAÑA</a></li>
+          <li><a href="#" class="block py-2 hover:text-yellow-300">CHURAÑA, SUMA KATUKAÑA</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="baretico">
-    <h1 id="seccion5">SUMA IRNAKAÑA | #SABERTRABAJAR |CONSCIOUS WORKING</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod maxime animi, fugiat minima corporis itaque ratione aperiam numquam aspernatur sed nam debitis quam tenetur, atque accusamus consectetur at in! Soluta.</p>
-    <img class="roca" src="img/TRABAJAR.jpg">
+      <!-- Contenido principal -->
+      <div class="bg-purple-500 w-full md:flex-1 py-4 md:py-6 px-4 md:px-6">
+        <div class="max-w-7xl mx-auto">
+          <div class="mb-8">
+            <h1 class="text-3xl font-bold mb-2">Título de la sección</h1>
+            <p class="text-gray-700">Descripción de la sección</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <div class="square-image">
+                <img src="https://raw.githubusercontent.com/platohedro/powertocommons/main/img/AMAR.jpg" alt="Imagen de ejemplo">
+              </div>
+              <div class="p-4">
+                <h2 class="text-base font-bold mb-2">SUMA MANQAÑA | #SABERCOMER |CONSCIOUS EATING</h2>
+                <p class="text-gray-700">Descripción del bloque 1</p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <div class="square-image">
+                <img src="https://raw.githubusercontent.com/platohedro/powertocommons/main/img/AMAR.jpg" alt="Imagen de ejemplo">
+              </div>
+              <div class="p-4">
+                <h2 class="text-base font-bold mb-2">SUMA MANQAÑA | #SABERCOMER |CONSCIOUS EATING</h2>
+                <p class="text-gray-700">Descripción del bloque 1</p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <div class="square-image">
+                <img src="https://raw.githubusercontent.com/platohedro/powertocommons/main/img/AMAR.jpg" alt="Imagen de ejemplo">
+              </div>
+              <div class="p-4">
+                <h2 class="text-base font-bold mb-2">SUMA MANQAÑA | #SABERCOMER |CONSCIOUS EATING</h2>
+                <p class="text-gray-700">Descripción del bloque 1</p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <div class="square-image">
+                <img src="https://raw.githubusercontent.com/platohedro/powertocommons/main/img/AMAR.jpg" alt="Imagen de ejemplo">
+              </div>
+              <div class="p-4">
+                <h2 class="text-base font-bold mb-2">SUMA MANQAÑA | #SABERCOMER |CONSCIOUS EATING</h2>
+                <p class="text-gray-700">Descripción del bloque 1</p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <div class="square-image">
+                <img src="https://raw.githubusercontent.com/platohedro/powertocommons/main/img/AMAR.jpg" alt="Imagen de ejemplo">
+              </div>
+              <div class="p-4">
+                <h2 class="text-base font-bold mb-2">SUMA MANQAÑA | #SABERCOMER |CONSCIOUS EATING</h2>
+                <p class="text-gray-700">Descripción del bloque 1</p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <div class="square-image">
+                <img src="https://raw.githubusercontent.com/platohedro/powertocommons/main/img/AMAR.jpg" alt="Imagen de ejemplo">
+              </div>
+              <div class="p-4">
+                <h2 class="text-base font-bold mb-2">SUMA MANQAÑA | #SABERCOMER |CONSCIOUS EATING</h2>
+                <p class="text-gray-700">Descripción del bloque 1</p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <div class="square-image">
+                <img src="https://raw.githubusercontent.com/platohedro/powertocommons/main/img/AMAR.jpg" alt="Imagen de ejemplo">
+              </div>
+              <div class="p-4">
+                <h2 class="text-base font-bold mb-2">SUMA MANQAÑA | #SABERCOMER |CONSCIOUS EATING</h2>
+                <p class="text-gray-700">Descripción del bloque 1</p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <div class="square-image">
+                <img src="https://raw.githubusercontent.com/platohedro/powertocommons/main/img/AMAR.jpg" alt="Imagen de ejemplo">
+              </div>
+              <div class="p-4">
+                <h2 class="text-base font-bold mb-2">SUMA MANQAÑA | #SABERCOMER |CONSCIOUS EATING</h2>
+                <p class="text-gray-700">Descripción del bloque 1</p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <div class="square-image">
+                <img src="https://raw.githubusercontent.com/platohedro/powertocommons/main/img/AMAR.jpg" alt="Imagen de ejemplo">
+              </div>
+              <div class="p-4">
+                <h2 class="text-base font-bold mb-2">SUMA MANQAÑA | #SABERCOMER |CONSCIOUS EATING</h2>
+                <p class="text-gray-700">Descripción del bloque 1</p>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <div class="square-image">
+                <img src="https://raw.githubusercontent.com/platohedro/powertocommons/main/img/AMAR.jpg" alt="Imagen de ejemplo">
+              </div>
+              <div class="p-4">
+                <h2 class="text-base font-bold mb-2">SUMA MANQAÑA | #SABERCOMER |CONSCIOUS EATING</h2>
+                <p class="text-gray-700">Descripción del bloque 1</p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <div class="square-image">
+                <img src="https://raw.githubusercontent.com/platohedro/powertocommons/main/img/AMAR.jpg" alt="Imagen de ejemplo">
+              </div>
+              <div class="p-4">
+                <h2 class="text-base font-bold mb-2">SUMA MANQAÑA | #SABERCOMER |CONSCIOUS EATING</h2>
+                <p class="text-gray-700">Descripción del bloque 1</p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <div class="square-image">
+                <img src="https://raw.githubusercontent.com/platohedro/powertocommons/main/img/AMAR.jpg" alt="Imagen de ejemplo">
+              </div>
+              <div class="p-4">
+                <h2 class="text-base font-bold mb-2">SUMA MANQAÑA | #SABERCOMER |CONSCIOUS EATING</h2>
+                <p class="text-gray-700">Descripción del bloque 1</p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <div class="square-image">
+                <img src="https://raw.githubusercontent.com/platohedro/powertocommons/main/img/AMAR.jpg" alt="Imagen de ejemplo">
+              </div>
+              <div class="p-4">
+                <h2 class="text-base font-bold mb-2">SUMA MANQAÑA | #SABERCOMER |CONSCIOUS EATING</h2>
+                <p class="text-gray-700">Descripción del bloque 1</p>
+              </div>
+            </div>
+            <!-- Repetir este bloque para las demás imágenes -->
+
+          </div>
+        </div>
+      </div>
+            <!-- Repetir este bloque 12 veces más -->
+          </div>
+        </div>
+      </div>
+      <!-- Columna adicional a la derecha -->
+      <div class="bg-gray-900 text-white w-full md:w-64 py-4 md:py-6 px-4 md:px-6">
+        <h2 class="text-lg font-bold">Publicidad</h2>
+        <p class="mt-4">Aquí podría ir un anuncio o alguna otra información adicional.</p>
+      </div>
     </div>
-    
-    <div class="baretico">
-    <h1 id="seccion6">SUMA LUPIÑA | #SABERMEDITAR |CONSCIOUS MEDITATION</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam ratione sequi voluptas, labore maxime ut veniam vero suscipit assumenda, iure deserunt quod sapiente officiis magnam autem sunt quia, nemo odit.</p>
-<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolore temporibus dolorem omnis ut harum cumque neque natus illum laborum, quae placeat ipsum numquam voluptatibus eius architecto, nam excepturi beatae!</p>
-<img class="roca" src="img/MEDITAR.jpg">
-</div>
-<div class="baretico">
-<h1 id="seccion7">SUMA AMUYAÑA | #SABERPENSAR |CONSCIOUS THINKING</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos velit ducimus voluptatem reprehenderit distinctio officia eius sapiente laboriosam explicabo vero. Amet rerum, tenetur esse accusantium magnam non blanditiis laborum nam?
-</p>
-<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium beatae omnis labore, illum odio ex eligendi accusamus nisi fuga minima adipisci, sed ad fugit facere fugiat consectetur impedit aperiam!</p>
-<img class="roca" src="img/PENSAR.jpg">
-</div>
-
-<div class="baretico">
-    <h1 id="seccion8">SUMA MUNAÑA, MUNAYASIÑA |#SABERAMARYSERAMADX | CONSCIOUSLOVING AND BEING LOVED</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, dignissimos quos doloremque ad blanditiis aliquid ut enim hic sit placeat possimus vero eum autem voluptas magni ducimus iusto, eos doloribus.</p>
-    <img class="roca" src="img/AMAR.jpg">
-</div>
-
-<div class="baretico">
-    <h1 id="seccion9">SUMA IST AÑA |#SABERESCUCHAR |CONSCIOUS LISTENING</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus commodi aliquid neque tempora labore at amet asperiores facilis iure dolor dicta perspiciatis laboriosam dolorum quos, similique, magnam porro. Quam, quasi.</p>
-    <img class="roca" src="img/ESCUCHAR.jpg">
-
-    </div>
-    
-    <div class="baretico">
-
-    <h1 id="seccion10">SUMA ARUSKIPAÑA |#SABERHABLARBIEN | CONSCIOUS SPEECH</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In commodi vel ut amet neque, est iste quae fugiat fugit harum rerum ex et unde ipsa? Praesentium distinctio aliquid ipsa id!
-
-    </p>
-    <img class="roca" src="img/HABLAR.jpg">
-
-    </div>
-
-    <div class="baretico">
-    <h1 id="seccion11">SUMA SAMKASIÑA | #SABERSOÑAR |CONSCIOUS DREAMING</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi praesentium deleniti ut ex expedita quas ad dolor asperiores doloribus quibusdam optio delectus, perspiciatis velit dolorem repudiandae. Repellendus porro quasi tempora!</p>
-    <img class="roca" src="img/SONAR.jpg">
-    </div>
-
-    <div class="baretico">
-    <h1 id="seccion12">SUMA SARNAQAÑA |#SABERCAMINAR |CONSCIOUS WALKING</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo iure laboriosam nisi, molestiae tempora ab esse! Facere aspernatur atque dolorum aut voluptas ea sint consequuntur commodi, repudiandae possimus explicabo molestias.</p>
-    <img class="roca" src="img/CAMINAR.jpg">
-</div>
-<div class="baretico">
-
-    <h1 id="seccion13">SUMA CHURAÑA, SUMA KATUKAÑA |#SABERDARYRECIBIR | CONSCIOUS RECIPROCITY</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, veniam similique! Debitis eius ullam sit, excepturi optio esse laborum illum, ratione quos provident quo blanditiis culpa at. Sapiente, obcaecati libero.</p>
-    <img class="roca" src="img/RECIPROCIDAD.jpg">
-</div>
-  </div>
-
-  <script src="js/neascript.js"></script>
-</body>
+  </body>
 </html>

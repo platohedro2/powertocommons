@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Objetos Sensibles</title>
-    <style>
-      .object {
-        width: 100px;
-        height: 100px;
-        background-color: red;
-        margin: 20px;
-        display: inline-block;
-        transition: background-color 0.3s;
-      }
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-      .object:hover {
-        background-color: green;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="object" onmouseover="playSound('sound1.mp3')" onmouseout="stopSound('sound1.mp3')"></div>
-    <div class="object" onmouseover="playSound('sound2.mp3')" onmouseout="stopSound('sound2.mp3')"></div>
-    <div class="object" onmouseover="playSound('sound3.mp3')" onmouseout="stopSound('sound3.mp3')"></div>
+  <title>Objetos Sensibles</title>
 
-    <script>
-      function playSound(soundFile) {
-        var audio = new Audio(soundFile);
-        audio.play();
-      }
+  <style>
+ 
+  </style>
+</head>
+<body>
+  <div class="audio-player">
+    <audio id="audio" src="audio/commons.ogg"></audio>
+    <div class="controls">
+      <button id="play-btn" class="btn"><img alt="esre"></button>
+      <button id="pause-btn" class="btn"><img alt="este"></button>
+      <br>
+      <br>
+      <div class="volume-container">
+        <label for="volume-slider">Volumen</label>
+        <input id="volume-slider" type="range" min="0" max="1" step="0.1" value="1">
+      </div>
+    </div>
+    <br>
+    <div class="progress-bar">
+      <div id="progress" class="progress"></div>
+      <div id="current-time" class="current-time">0:00</div>
+      <div id="duration" class="duration">0:00</div>
+    </div>
+    
+    <a id="download-btn" class="btn" href="audio/commons.ogg" download><i class="fas fa-download"></i> Descargar</a>
+  </div>
 
-      function stopSound(soundFile) {
-        var audio = new Audio(soundFile);
-        audio.pause();
-        audio.currentTime = 0;
-      }
-    </script>
-  </body>
+  <script>
+     </script>
+</body>
 </html>
