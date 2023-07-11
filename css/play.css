@@ -92,13 +92,16 @@
     width: fit-content;
     animation: slideLeft 10s infinite linear;
   }
-  .logo-container{
+  
+  .logo-container {
     align-items: baseline;
+    margin-right: 20px;
   }
   
   .slide {
     flex: 0 0 auto;
     padding: 10px;
+    margin-right: 20px; /* Agrega un margen derecho de 20px entre las imágenes */
   }
   
   .slide img {
@@ -114,3 +117,4 @@
       transform: translateX(-50%);
     }
   }
+  
