@@ -90,7 +90,7 @@
   .slider {
     display: flex;
     width: fit-content;
-    animation: slideLeft 10s infinite linear;
+    animation: slideLeft 20s infinite linear;
   }
   
   .logo-container {
